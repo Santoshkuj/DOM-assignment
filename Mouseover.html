@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On click</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+    div{
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: blue solid 2px;
+    }
+    p{
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div id="box">
+       <p id="clickme">click me</p>
+    </div>
+    <script>
+        const element = document.getElementById("box")
+        element.addEventListener("mouseover",()=> alert("Mouse over working - go outside of the box"))
+    </script>
+</body>
+</html>
